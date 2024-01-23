@@ -4,7 +4,7 @@ package studies.maratonajava.introducao;
  * Isso é um comentário <b>Javadoc</b>
  */
 
-public class HelloWorld {
+public class Aula01HelloWorld {
     // Isso é um comentário de uma linha
     /*
         Isso é um comentário
