@@ -13,11 +13,14 @@ public class Aula02TiposPrimitivos {
         boolean falseVar = false; // 1 bit true or false
         char character = 'M'; // 2 bytes
 
+        String text = "This is a biiiiiiiiiiiiiiiiig text";
+
         short castingNumber = (short) 10000000L; //Casting
 
         System.out.println("Age is " + age + " years");
         System.out.println(trueVar);
         System.out.println(character);
         System.out.println(castingNumber);
+        System.out.println(text);
     }
 }
