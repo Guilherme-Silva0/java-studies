@@ -9,10 +9,10 @@ public class Aula04Operadores {
         int num1 = 10;
         int num2 = 20;
 
-        System.out.println("Soma: " + ( num1 + num2 ));
-        System.out.println("Subtração: " + ( num1 - num2 ));
-        System.out.println("Multiplicação: " + ( num1 * num2 ));
-        System.out.println("Divisão: " + ( num1 / (double) num2 ));
+        System.out.println("Soma: " + (num1 + num2));
+        System.out.println("Subtração: " + (num1 - num2));
+        System.out.println("Multiplicação: " + (num1 * num2));
+        System.out.println("Divisão: " + (num1 / (double) num2));
 
         System.out.println("\n");
         // %
@@ -28,10 +28,10 @@ public class Aula04Operadores {
         boolean isTenEqualToTwenty = 10 == 20.0;
         boolean isTenDifferentFromTwenty = 10 != 20.0;
 
-        System.out.println("10 é maior que 20? "+isTenGreaterThanTwenty);
-        System.out.println("10 é menor que 20? "+isTenLessThanTwenty);
-        System.out.println("10 é igual a 20? "+isTenEqualToTwenty);
-        System.out.println("10 é diferente de 20? "+isTenDifferentFromTwenty);
+        System.out.println("10 é maior que 20? " + isTenGreaterThanTwenty);
+        System.out.println("10 é menor que 20? " + isTenLessThanTwenty);
+        System.out.println("10 é igual a 20? " + isTenEqualToTwenty);
+        System.out.println("10 é diferente de 20? " + isTenDifferentFromTwenty);
 
         System.out.println("\n");
         // && (AND), || (OR), ! (NOT)
@@ -42,12 +42,42 @@ public class Aula04Operadores {
         boolean isWithinTheLawLessThanThirty = age < 30 && wage >= 3381;
 
         System.out.println("Esta na lei maior que 30? " + isWithinTheLawGreaterThanThirty);
-        System.out.println("Esta na lei manor que 30? "+isWithinTheLawLessThanThirty);
+        System.out.println("Esta na lei manor que 30? " + isWithinTheLawLessThanThirty);
 
         double currentValue = 500;
         double savingsValue = 10000;
 
         boolean isPurchasable = currentValue >= 5000 || savingsValue >= 5000;
         System.out.println("É possível comprar um PS5? " + isPurchasable);
+
+        System.out.println("\n");
+        // = += -= *= /= %= ++ --
+
+        double bonus = 1800;
+        System.out.println(bonus);
+
+        bonus += 200; // bonus = bonus + 200
+        System.out.println(bonus);
+
+        bonus -= 200; // bonus = bonus - 20
+        System.out.println(bonus);
+
+        bonus *= 2;
+        System.out.println(bonus);
+
+        bonus /= 2;
+        System.out.println(bonus);
+
+        bonus %= 2;
+        System.out.println(bonus);
+
+        int counter = 0;
+        counter++; // counter = counter + 1 executa depois da operação
+        ++counter; // executa antes da operação
+        System.out.println(counter);
+
+        counter--; // counter = counter - 1 executa depois da operação
+        --counter; // executa antes da operação
+        System.out.println(counter);
     }
 }
