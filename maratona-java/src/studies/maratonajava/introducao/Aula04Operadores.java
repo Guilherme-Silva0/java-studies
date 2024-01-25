@@ -32,5 +32,16 @@ public class Aula04Operadores {
         System.out.println("10 é menor que 20? "+isTenLessThanTwenty);
         System.out.println("10 é igual a 20? "+isTenEqualToTwenty);
         System.out.println("10 é diferente de 20? "+isTenDifferentFromTwenty);
+
+        System.out.println("\n");
+        // && (AND), || (OR), ! (NOT)
+
+        int age = 24;
+        float wage = 3500f;
+        boolean isWithinTheLawGreaterThanThirty = age >= 30 && wage >= 4612;
+        boolean isWithinTheLawLessThanThirty = age < 30 && wage >= 3381;
+
+        System.out.println("Esta na lei maior que 30? " + isWithinTheLawGreaterThanThirty);
+        System.out.println("Esta na lei manor que 30? "+isWithinTheLawLessThanThirty);
     }
 }
