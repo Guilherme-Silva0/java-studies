@@ -43,5 +43,11 @@ public class Aula04Operadores {
 
         System.out.println("Esta na lei maior que 30? " + isWithinTheLawGreaterThanThirty);
         System.out.println("Esta na lei manor que 30? "+isWithinTheLawLessThanThirty);
+
+        double currentValue = 500;
+        double savingsValue = 10000;
+
+        boolean isPurchasable = currentValue >= 5000 || savingsValue >= 5000;
+        System.out.println("É possível comprar um PS5? " + isPurchasable);
     }
 }
