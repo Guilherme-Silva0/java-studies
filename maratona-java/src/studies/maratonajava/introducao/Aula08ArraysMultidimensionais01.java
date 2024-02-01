@@ -18,10 +18,20 @@ public class Aula08ArraysMultidimensionais01 {
 
         StringBuilder daysString = new StringBuilder();
         for (int i = 0; i < days.length; i++) {
-            for (int j=0; j<days[i].length;j++) {
+            for (int j = 0; j < days[i].length; j++) {
                 daysString.append(days[i][j]).append(" ");
             }
         }
         System.out.println(daysString);
+
+        System.out.println("\n");
+
+        StringBuilder dayString2 = new StringBuilder();
+        for (int[] month : days) {
+            for (int day : month) {
+                dayString2.append(day).append(" ");
+            }
+        }
+        System.out.println(dayString2);
     }
 }
