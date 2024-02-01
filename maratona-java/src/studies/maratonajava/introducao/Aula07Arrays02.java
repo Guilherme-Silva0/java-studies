@@ -8,6 +8,12 @@ public class Aula07Arrays02 {
         // String null
 
         String[] names = new String[3];
-        System.out.println(names[0] + " " + names[1] + " " + names[2]);
+        names[0] = "Maria";
+        names[1] = "Julia";
+        names[2] = "João";
+
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
     }
 }
