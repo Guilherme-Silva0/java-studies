@@ -1,6 +1,6 @@
 package studies.maratonajava.introducao;
 
-public class Aula05EstruturasDeRepeticao03 {
+public class Aula06EstruturasDeRepeticao03 {
     public static void main(String[] args) {
         int maxValue = 50;
         for (int i = 0; i <= maxValue; i++) {
