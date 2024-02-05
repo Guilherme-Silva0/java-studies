@@ -9,6 +9,6 @@ public class ProfessorTest01 {
         professor.idade = 19;
         professor.sexo = 'M';
 
-        System.out.println(professor.nome + ", " + professor.idade + ", Anos " + professor.sexo);
+        System.out.println("Nome: "+professor.nome + ", Idade: " + professor.idade + " Anos, Sexo: " + professor.sexo+".");
     }
 }
