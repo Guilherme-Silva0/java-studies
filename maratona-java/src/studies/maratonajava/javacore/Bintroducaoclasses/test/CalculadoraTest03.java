@@ -10,6 +10,6 @@ public class CalculadoraTest03 {
         System.out.println("-------------------------");
         System.out.println(calculadora.dvideDoisNumeros02(20, 0));
         System.out.println("-------------------------");
-        calculadora.imprimeDivisaoDoisNumeros(20, 5);
+        calculadora.imprimeDivisaoDoisNumeros(20000, 50);
     }
 }
