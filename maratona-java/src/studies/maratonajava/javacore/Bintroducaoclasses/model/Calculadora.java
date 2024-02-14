@@ -36,4 +36,14 @@ public class Calculadora {
         System.out.println(num1 / num2);
     }
 
+    public void alteraDoisNumeros(int numero1, int numero02) {
+        numero1 = 99;
+        numero02 = 43;
+
+
+        System.out.println("Dentro do alteraDoisNumeros");
+        System.out.println("Num1: " + numero1);
+        System.out.println("Num2: " + numero02);
+    }
+
 }
