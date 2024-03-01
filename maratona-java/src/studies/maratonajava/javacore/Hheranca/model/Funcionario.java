@@ -5,7 +5,7 @@ public class Funcionario extends Pessoa {
 
     public void imprime() {
         super.imprime();
-        System.out.println("Salácio: " + this.salario);
+        System.out.println("Eu, " + this.nome + ", recebi o salário de " + this.salario + " reais");
     }
 
     public double getSalario() {
