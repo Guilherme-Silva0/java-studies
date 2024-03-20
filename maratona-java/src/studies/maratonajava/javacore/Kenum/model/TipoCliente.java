@@ -12,6 +12,15 @@ public enum TipoCliente {
         this.RELATORIO = relatorio;
     }
 
+    public static TipoCliente tipoClientePorAtributo(String atributo) {
+        for (TipoCliente value : values()) {
+            if (value.getRelatorio().equals(atributo)) {
+                return value;
+            }
+        }
+        return null;
+    }
+
     public int getValor() {
         return VALOR;
     }
