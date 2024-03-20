@@ -1,35 +1,27 @@
 package studies.maratonajava.javacore.Kenum.model;
 
 public class Cliente {
-    private String nome;
-    private TipoCliente tipo;
+    public enum TipoPagamento {
+        DEBITO, CREDITO
+    }
 
-    public Cliente(String nome, TipoCliente tipo) {
+    private String nome;
+    private TipoCliente tipoCliente;
+    private TipoPagamento tipoPagamento;
+
+    public Cliente(String nome, TipoCliente tipoCliente, TipoPagamento tipoPagamento) {
         this.nome = nome;
-        this.tipo = tipo;
+        this.tipoCliente = tipoCliente;
+        this.tipoPagamento = tipoPagamento;
     }
 
     @Override
     public String toString() {
         return "Cliente{" +
                 "nome='" + nome + '\'' +
-                ", tipo=" + tipo +
+                ", tipoCliente=" + tipoCliente.getRelatorio() +
+                ", tipoClienteInt=" + tipoCliente.getValor() +
+                ", tipoPagamento=" + tipoPagamento +
                 '}';
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public TipoCliente getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(TipoCliente tipo) {
-        this.tipo = tipo;
     }
 }
