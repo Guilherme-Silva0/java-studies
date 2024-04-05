@@ -13,11 +13,27 @@ public class WrapperTest01 {
 
         Byte byteW = 1;
         Short shortW = 1;
-        Integer intW = 1;
+        Integer intW = 1; // autoboxing
         Long longW = 10L;
         Float floatW = 10F;
         Double doubleW = 10D;
         Character charW = 'M';
         Boolean booleanW = false;
+
+        int i = intW; // unboxing
+        Integer intW2 = Integer.parseInt("1");
+        boolean aTrue = Boolean.parseBoolean("true");
+
+        System.out.println(aTrue);
+
+        System.out.println("--------------------");
+
+        System.out.println(Character.isDigit('A'));
+        System.out.println(Character.isLetterOrDigit('!'));
+        System.out.println(Character.isUpperCase('A'));
+        System.out.println(Character.isLowerCase('A'));
+        System.out.println(Character.toUpperCase('a'));
+        System.out.println(Character.toLowerCase('A'));
+        
     }
 }
