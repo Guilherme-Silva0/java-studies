@@ -20,6 +20,7 @@ public class PatternMatcherTest05 {
         // | = Or
         // $ = End line
         // a.b = Any character between a and b
+        // ^ Begin of a line or Not
         String regex = "([a-zA-Z0-9\\._-])+@([a-zA-Z])+(\\.([a-zA-Z])+)+";
         System.out.println("Regex: " + regex);
         String text = "luffy@hotmail.com, 123jotaro@gmail.com, @%#!zoro@mail.br, test@gmail.com.br, sakura@mail";
