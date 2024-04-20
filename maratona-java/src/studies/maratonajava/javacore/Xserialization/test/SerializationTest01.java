@@ -1,5 +1,6 @@
 package studies.maratonajava.javacore.Xserialization.test;
 
+import studies.maratonajava.javacore.Xserialization.domain.Class;
 import studies.maratonajava.javacore.Xserialization.domain.Student;
 
 import java.io.IOException;
@@ -12,6 +13,8 @@ import java.nio.file.Paths;
 public class SerializationTest01 {
     public static void main(String[] args) {
         Student student = new Student(1L, "Guilherme Silva", "show");
+        Class aClass = new Class("3B");
+        student.setaClass(aClass);
         save(student);
         System.out.println(read());
     }
