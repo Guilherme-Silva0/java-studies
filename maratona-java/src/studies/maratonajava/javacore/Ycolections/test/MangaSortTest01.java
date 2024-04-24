@@ -4,7 +4,22 @@ import studies.maratonajava.javacore.Ycolections.domain.Manga;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
+class MangaByNameComparator implements Comparator<Manga> {
+    @Override
+    public int compare(Manga manga, Manga manga2) {
+        return manga.getName().compareTo(manga2.getName());
+    }
+}
+
+class MangaByPriceComparator implements Comparator<Manga> {
+    @Override
+    public int compare(Manga manga, Manga manga2) {
+        return manga.getPrice().compareTo(manga2.getPrice());
+    }
+}
 
 public class MangaSortTest01 {
     public static void main(String[] args) {
@@ -26,5 +41,16 @@ public class MangaSortTest01 {
             System.out.println(manga);
         }
 
+        System.out.println("---------------- Sorted by name ----------------");
+        mangas.sort(new MangaByNameComparator());
+        for (Manga manga : mangas) {
+            System.out.println(manga);
+        }
+
+        System.out.println("---------------- Sorted by price ----------------");
+        mangas.sort(new MangaByPriceComparator());
+        for (Manga manga : mangas) {
+            System.out.println(manga);
+        }
     }
 }
