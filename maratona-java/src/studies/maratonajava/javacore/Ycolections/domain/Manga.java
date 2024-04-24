@@ -2,10 +2,10 @@ package studies.maratonajava.javacore.Ycolections.domain;
 
 import java.util.Objects;
 
-public class Manga {
+public class Manga implements Comparable<Manga> {
     private Long id;
     private String name;
-    private double price;
+    private Double price;
 
     public Manga(Long id, String name, double price) {
         Objects.requireNonNull(id);
@@ -59,5 +59,15 @@ public class Manga {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    // -1 if this < manga
+    // if this == manga return 0
+    // if this > manga return 1
+    @Override
+    public int compareTo(Manga manga) {
+        return this.id.compareTo(manga.getId());
+//        return this.price.compareTo(manga.getPrice());
+//        return this.name.compareTo(manga.getName());
     }
 }
